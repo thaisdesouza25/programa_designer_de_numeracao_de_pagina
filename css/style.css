@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container da página */
+.pagination-container{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da lista da paginação */
+.pagination-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Estilo de cada item da lista */
+.pagination-list li {
+    margin: 0 5px;
+}
+
+/* Estilo dos links de paginação */
+.pagination-link{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #555;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Efeito de hover nos links */
+.pagination-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilo para o link ativo (página atual) */
+.pagination-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilo para os botões "Anterior" e "Próximo" */
+.pagination-link.prev,
+.pagination-link.next {
+    background-color: #f0f4f8;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+}
+
+/* Efeito de hover nos botões de navegação */
+.pagination-link.prev:hover,
+.pagination-link.next:hover {
+    background-color: #007bff;
+    color: #fff;
+}
